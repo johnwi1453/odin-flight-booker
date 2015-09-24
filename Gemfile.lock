@@ -36,6 +36,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    addressable (2.3.8)
     arel (6.0.3)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -51,6 +52,17 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.6.0)
+    figaro (1.1.1)
+      thor (~> 0.14)
+    foundation-rails (5.5.2.1)
+      railties (>= 3.1.0)
+      sass (>= 3.3.0, < 3.5)
+    foundation_rails_helper (1.0.0)
+      actionpack (~> 4.1, >= 4.1.1)
+      activemodel (~> 4.1, >= 4.1.1)
+      activesupport (~> 4.1, >= 4.1.1)
+      railties (~> 4.1, >= 4.1.1)
+      tzinfo (~> 1.2, >= 1.2.2)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -62,6 +74,10 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.3)
+    launchy (2.4.3)
+      addressable (~> 2.3)
+    letter_opener (1.4.1)
+      launchy (~> 2.2)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -70,8 +86,10 @@ GEM
     mini_portile (0.6.2)
     minitest (5.8.1)
     multi_json (1.11.2)
+    newrelic_rpm (3.13.1.300)
     nokogiri (1.6.6.2-x86-mingw32)
       mini_portile (~> 0.6.0)
+    pg (0.18.3-x86-mingw32)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -94,6 +112,11 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.2)
       loofah (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.4)
+    rails_stdout_logging (0.0.4)
     railties (4.2.3)
       actionpack (= 4.2.3)
       activesupport (= 4.2.3)
@@ -143,9 +166,16 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
+  figaro
+  foundation-rails
+  foundation_rails_helper
   jbuilder (~> 2.0)
   jquery-rails
+  letter_opener
+  newrelic_rpm
+  pg
   rails (= 4.2.3)
+  rails_12factor
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   sqlite3
