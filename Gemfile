@@ -39,6 +39,8 @@ gem 'newrelic_rpm'
 gem "letter_opener", :group => :development
 
 gem 'figaro'
+
+gem "letter_opener", :group => :development
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
